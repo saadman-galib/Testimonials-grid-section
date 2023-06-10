@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 body {
     min-width: 100%;
     min-height: 100vh;
-    background-color: #EDF2F8;
+    background-color: #edf2f8;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -19,21 +21,24 @@ body {
     display: grid;
     width: 1250px;
     height: 600px;
-    /* background-color: ; */
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     grid-gap: 30px;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .item {
-    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
     border-radius: 12px;
+    padding: 30px;
 }
 
 .item-1 {
     grid-area: 1 / 1 / 2 / 3;
     background-color: hsl(263, 55%, 52%);
+    background-image: url('./assets/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 20%;
 }
 
 .item-2 {
@@ -54,4 +59,97 @@ body {
 .item-5 {
     grid-area: 1 / 4 / 3 / 5;
     background-color: hsl(0, 0%, 100%);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-bottom: 5px; */
+}
+
+.profile-container img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.profile-name h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-name p {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.text-container h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 18px 0;
+    line-height: 26px;
+}
+
+.text-container p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.item-1 .profile-container img {
+    border: 2px solid #9875c7;
+}
+
+.item-4 .profile-container img {
+    border: 2px solid #4c3f7b;
+}
+
+.item-1 .profile-name h2,
+.item-1 .profile-name p {
+    color: #f3d9f9;
+}
+
+.item-2 .profile-name h2,
+.item-2 .profile-name p {
+    color: #a7b2b9;
+}
+
+.item-3 .profile-name h2,
+.item-3 .profile-name p {
+    color: #7d8285;
+}
+
+.item-4 .profile-name h2,
+.item-4 .profile-name p {
+    color: #d2d8e2;
+}
+
+.item-5 .profile-name h2,
+.item-5 .profile-name p {
+    color: #626670;
+}
+
+.item-1 .text-container h2,
+.item-1 .text-container p {
+    color: #FBE6FF;
+}
+.item-2 .text-container h2,
+.item-2 .text-container p {
+    color: #EDF4F6;
+}
+.item-3 .text-container h2,
+.item-3 .text-container p {
+    color: #545A64;
+}
+.item-4 .text-container h2,
+.item-4 .text-container p {
+    color: #EAF1FA;
+}
+.item-5 .text-container h2,
+.item-5 .text-container p {
+    color: #545A64;
 }
