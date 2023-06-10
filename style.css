@@ -3,3 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.grid-container{
+  display: grid;
+
+}
+
+.item{
+  border: 1px solid red;
+  display: inline-block;
+  width: 10px;
+}
